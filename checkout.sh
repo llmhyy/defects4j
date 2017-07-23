@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 #This script is used to check out all the bug and fix version of the whole repository,
 
-projects=(Chart Closure Lang Math Mockito Time)
-bugNums=(26 133 65 106 38 27)
+#projects=(Chart Closure Lang Math Mockito Time)
+#bugNums=(26 133 65 106 38 27)
 
-basePath=/mnt/linyun/bug_code
+projects=(Mockito Time)
+bugNums=(38 27)
+
+basePath=~/doc/bug_repo
 
 bid="b"
 fid="f"
@@ -34,9 +37,11 @@ for((i=0;i<6;i++)); do
 
 		defects4j checkout -p $projectName -v $v$bid -w $buggyPath
 		cd $buggyPath
+		defects4j compile
 		defects4j test
 		defects4j checkout -p $projectName -v $v$fid -w $fixPath
 		cd $fixPath
+		defects4j compile
 		defects4j test
 	done
 	
