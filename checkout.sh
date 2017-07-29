@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #This script is used to check out all the bug and fix version of the whole repository,
 
-#projects=(Chart Closure Lang Math Mockito Time)
-#bugNums=(26 133 65 106 38 27)
+projects=(Chart Closure Lang Math Mockito Time)
+bugNums=(26 133 65 106 38 27)
 
-projects=(Mockito Time)
-bugNums=(38 27)
+#projects=(Mockito Time)
+#bugNums=(38 27)
 
 basePath=~/doc/bug_repo
 
