@@ -4,8 +4,8 @@
 projects=(Chart Closure Lang Math Mockito Time)
 bugNums=(26 133 65 106 38 27)
 
-#projects=(Mockito Time)
-#bugNums=(38 27)
+#projects=(Math)
+#bugNums=(106)
 
 basePath=~/doc/bug_repo
 
